@@ -4,6 +4,9 @@
 
 纯手写 HTML / CSS / JavaScript，**零依赖、零构建、零框架**。下载后双击 `index.html` 就能看，上传到 GitHub 就能上线。
 
+- **线上地址**：<https://serein021.github.io/>
+- **GitHub 仓库**：<https://github.com/Serein021/Serein021.github.io>
+
 ![桌面端预览](preview/desktop.png)
 
 ---
@@ -130,10 +133,10 @@ https://你的用户名.github.io
 | `WANG PENGFEI` | 你的英文名 / 拼音 | Hero、头像图 |
 | `嵌入式软件工程师` | 你的职业 | Hero、About、SEO |
 | `wangpengfei@example.com` | 你的邮箱（HTML 5 处 + JS 1 处） | Hero、About、Contact、复制按钮 |
-| `https://github.com/yourname` | 你的 GitHub 主页（共 3 处） | Hero、Contact、JSON-LD |
+| `https://github.com/Serein021` | 你的 GitHub 主页（已设置） | Hero、Contact、JSON-LD |
 | `杭州` / `HANGZHOU` | 你的城市 | Hero、About、Contact、头像图 |
 | `6+` / `20+` | 你的年限 / 项目数 | Hero 数据条 |
-| `yourname.github.io` | 你的正式网址 | `<head>` 注释、JSON-LD、robots、sitemap |
+| `https://serein021.github.io/` | 你的正式网址（已设置） | canonical、JSON-LD、robots、sitemap |
 
 > 「复制邮箱」按钮读取的是 `assets/js/main.js` 顶部的 `EMAIL` 常量，改邮箱时别忘了同步这一处。
 
