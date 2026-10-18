@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="seaTitle">
+  <title id="seaTitle">青岛海边的插画</title>
+  <rect width="800" height="1000" fill="#2F4BFF"/>
+  <circle cx="560" cy="280" r="148" fill="#D8FF3E"/>
+  <path d="M0 640 Q100 610 200 640 T400 640 T600 640 T800 640 V1000 H0 Z" fill="#0E0E0C"/>
+  <path d="M0 710 Q100 680 200 710 T400 710 T600 710 T800 710" fill="none" stroke="#F4F0E6" stroke-width="3" opacity=".35"/>
+  <path d="M0 790 Q100 760 200 790 T400 790 T600 790 T800 790" fill="none" stroke="#D8FF3E" stroke-width="4" opacity=".8"/>
+  <path d="M0 870 Q100 840 200 870 T400 870 T600 870 T800 870" fill="none" stroke="#F4F0E6" stroke-width="2" opacity=".22"/>
+  <g fill="#F4F0E6" font-family="Consolas, 'Courier New', monospace">
+    <text x="46" y="78" font-size="20" letter-spacing="7">QINGDAO / 01</text>
+    <text x="46" y="118" font-size="13" letter-spacing="4" opacity=".6">36.0671 N / 120.3826 E</text>
+    <text x="46" y="930" font-size="16" letter-spacing="8" opacity=".8">SEASIDE</text>
+  </g>
+  <path d="M660 80h54M687 53v54" stroke="#F4F0E6" stroke-width="2" opacity=".55"/>
+</svg>

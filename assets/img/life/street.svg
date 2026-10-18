@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="streetTitle">
+  <title id="streetTitle">青岛街角的插画</title>
+  <rect width="800" height="1000" fill="#F4F0E6"/>
+  <rect width="800" height="360" fill="#2F4BFF"/>
+  <circle cx="190" cy="170" r="86" fill="#D8FF3E"/>
+  <path d="M0 640 V360 H180 V640 Z" fill="#0E0E0C"/>
+  <path d="M210 640 V420 H390 V640 Z" fill="#0E0E0C"/>
+  <path d="M420 640 V320 H610 V640 Z" fill="#0E0E0C"/>
+  <path d="M640 640 V470 H800 V640 Z" fill="#0E0E0C"/>
+  <g fill="#D8FF3E">
+    <rect x="40" y="400" width="40" height="54"/><rect x="105" y="400" width="40" height="54"/>
+    <rect x="40" y="490" width="40" height="54"/><rect x="105" y="490" width="40" height="54"/>
+    <rect x="250" y="460" width="44" height="58"/><rect x="320" y="460" width="44" height="58"/>
+    <rect x="455" y="370" width="45" height="60"/><rect x="525" y="370" width="45" height="60"/>
+    <rect x="455" y="465" width="45" height="60"/><rect x="525" y="465" width="45" height="60"/>
+  </g>
+  <path d="M210 560 H390 L370 640 H230 Z" fill="#FF4B2B"/>
+  <path d="M0 820 H800 V1000 H0 Z" fill="#0E0E0C"/>
+  <g fill="#F4F0E6" font-family="Consolas, 'Courier New', monospace">
+    <text x="46" y="78" font-size="20" letter-spacing="7">QINGDAO / 02</text>
+    <text x="46" y="118" font-size="13" letter-spacing="4" opacity=".7">STREET CORNER</text>
+    <text x="46" y="930" font-size="16" letter-spacing="8">WALK SLOWLY</text>
+  </g>
+  <path d="M700 700h44M722 678v44" stroke="#FF4B2B" stroke-width="3"/>
+</svg>

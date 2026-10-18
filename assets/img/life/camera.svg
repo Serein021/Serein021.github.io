@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="cameraTitle">
+  <title id="cameraTitle">尼康 Z30 相机的插画</title>
+  <rect width="800" height="1000" fill="#C9B6FF"/>
+  <circle cx="650" cy="220" r="150" fill="#2F4BFF"/>
+  <rect x="110" y="330" width="580" height="380" rx="42" fill="#0E0E0C"/>
+  <rect x="150" y="290" width="160" height="70" rx="18" fill="#0E0E0C"/>
+  <circle cx="400" cy="520" r="150" fill="#2F4BFF" stroke="#D8FF3E" stroke-width="10"/>
+  <circle cx="400" cy="520" r="92" fill="#0E0E0C" stroke="#F4F0E6" stroke-width="4"/>
+  <circle cx="400" cy="520" r="46" fill="#2F4BFF"/>
+  <rect x="560" y="370" width="90" height="46" rx="10" fill="#D8FF3E"/>
+  <text x="578" y="402" fill="#0E0E0C" font-family="Arial Black, Arial" font-size="24" font-weight="900">Z30</text>
+  <g fill="#0E0E0C" font-family="Consolas, 'Courier New', monospace">
+    <text x="46" y="78" font-size="20" letter-spacing="7">CAMERA / 05</text>
+    <text x="46" y="118" font-size="13" letter-spacing="4" opacity=".55">NIKON Z30 · 15–50 / 50–250</text>
+    <text x="46" y="930" font-size="16" letter-spacing="8">LIGHT CHASER</text>
+  </g>
+  <path d="M60 840h60M90 810v60" stroke="#FF4B2B" stroke-width="3"/>
+</svg>

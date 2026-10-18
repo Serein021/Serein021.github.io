@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="deskTitle">
+  <title id="deskTitle">游戏桌面的插画</title>
+  <rect width="800" height="1000" fill="#0E0E0C"/>
+  <rect x="90" y="170" width="620" height="360" rx="14" fill="#081005" stroke="#D8FF3E" stroke-width="3"/>
+  <g stroke="#D8FF3E" stroke-opacity=".16" stroke-width="1">
+    <path d="M90 230H710M90 290H710M90 350H710M90 410H710M90 470H710"/>
+    <path d="M170 170V530M250 170V530M330 170V530M410 170V530M490 170V530M570 170V530M650 170V530"/>
+  </g>
+  <path d="M90 430 L160 430 L190 330 L220 490 L250 430 L330 430 L360 380 L390 470 L420 430 L500 430 L530 300 L560 500 L590 430 L710 430"
+        fill="none" stroke="#D8FF3E" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="90" y="600" width="620" height="170" rx="10" fill="#191916" stroke="#F4F0E6" stroke-width="2" stroke-opacity=".3"/>
+  <g stroke="#D8FF3E" stroke-opacity=".55" stroke-width="2">
+    <path d="M120 640H680M120 680H680M120 720H680"/>
+  </g>
+  <circle cx="120" cy="830" r="42" fill="#FF4B2B"/>
+  <rect x="98" y="786" width="44" height="16" rx="6" fill="#F4F0E6"/>
+  <g fill="#F4F0E6" font-family="Consolas, 'Courier New', monospace">
+    <text x="46" y="78" font-size="20" letter-spacing="7">SETUP / 04</text>
+    <text x="46" y="118" font-size="13" letter-spacing="4" opacity=".6">PLAY. PAUSE. REPEAT.</text>
+    <text x="46" y="930" font-size="16" letter-spacing="8" opacity=".8">DESK / NIGHT</text>
+  </g>
+</svg>

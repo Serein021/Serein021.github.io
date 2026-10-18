@@ -149,7 +149,7 @@
   });
 
   /* ---------- 复制邮箱 ---------- */
-  var EMAIL = "wangpengfei@example.com";
+  var EMAIL = "2529870224@qq.com";
   var toast = document.getElementById("toast");
   var toastTimer = 0;
 
@@ -198,7 +198,53 @@
     button.addEventListener("click", copyEmail);
   });
 
-  /* ---------- 杭州时间 ---------- */
+  /* ---------- 生活照片大图 ---------- */
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImage = document.getElementById("lightboxImage");
+  var lightboxCaption = document.getElementById("lightboxCaption");
+  var lightboxClose = document.getElementById("lightboxClose");
+  var photoCards = Array.prototype.slice.call(document.querySelectorAll(".photo-card"));
+  var lastPhoto = null;
+
+  function openLightbox(card) {
+    if (!lightbox || !lightboxImage) return;
+    var full = card.getAttribute("data-full");
+    var caption = card.getAttribute("data-caption") || "";
+    var image = card.querySelector("img");
+
+    lightboxImage.src = full;
+    lightboxImage.alt = image ? image.alt : caption;
+    if (lightboxCaption) lightboxCaption.textContent = caption;
+    lightbox.hidden = false;
+    body.classList.add("lightbox-open");
+    lastPhoto = card;
+    if (lightboxClose) lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    if (!lightbox || lightbox.hidden) return;
+    lightbox.hidden = true;
+    body.classList.remove("lightbox-open");
+    if (lastPhoto) lastPhoto.focus();
+  }
+
+  if (lightbox && photoCards.length) {
+    photoCards.forEach(function (card) {
+      card.addEventListener("click", function () { openLightbox(card); });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !lightbox.hidden) closeLightbox();
+    });
+  }
+
+  /* ---------- 青岛时间 ---------- */
   var localTimeEl = document.getElementById("localTime");
   var contactTimeEl = document.getElementById("contactTime");
   var timeFull = new Intl.DateTimeFormat("zh-CN", {

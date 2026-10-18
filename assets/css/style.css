@@ -755,6 +755,11 @@ body.nav-open .nav-toggle-icon i:last-child {
   vertical-align: super;
 }
 
+.hero-stats .stat-long {
+  font-size: clamp(1.35rem, 2.2vw, 2.1rem);
+  letter-spacing: -0.03em;
+}
+
 .hero-stats span:not(.scroll-hint-line) {
   display: block;
   margin-top: 8px;
@@ -1380,6 +1385,10 @@ body.nav-open .nav-toggle-icon i:last-child {
   margin-top: 24px;
 }
 
+.exp-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .exp-item {
   padding: 4px 28px 4px 0;
   border-right: 1px solid var(--line-dark);
@@ -1631,6 +1640,363 @@ body.nav-open .nav-toggle-icon i:last-child {
   white-space: nowrap;
 }
 
+/* 游戏、摄影与青岛 */
+.life-card--apex {
+  grid-column: span 5;
+  grid-row: span 2;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.life-card--camera {
+  grid-column: span 4;
+  background: var(--verm);
+}
+
+.life-card--qingdao {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: var(--blue);
+  color: var(--paper);
+}
+
+.life-card--shelf {
+  grid-column: span 4;
+  background: var(--acid);
+}
+
+.life-card--routine {
+  grid-column: span 6;
+  background: var(--paper);
+}
+
+.life-card--now {
+  grid-column: span 6;
+  background: var(--lilac);
+}
+
+.life-card--apex .life-card-body {
+  flex: 1;
+}
+
+.life-kicker {
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  color: var(--acid);
+}
+
+.life-card--apex .life-card-body h3 {
+  font-size: clamp(1.7rem, 2.8vw, 2.7rem);
+  line-height: 1.05;
+}
+
+.life-card--apex .life-card-body p {
+  max-width: 28ch;
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.life-stats {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(244, 240, 230, 0.22);
+}
+
+.life-stats strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.life-stats span {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  opacity: 0.65;
+}
+
+.life-stats > span:first-child {
+  opacity: 1;
+}
+
+.life-stats strong {
+  color: var(--paper);
+}
+
+.life-badge {
+  padding: 5px 9px;
+  border: 1px solid var(--ink);
+  background: var(--acid);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  transform: rotate(-3deg);
+  opacity: 1 !important;
+}
+
+.life-card--qingdao .life-icon svg,
+.life-card--camera .life-icon svg {
+  width: 52px;
+  height: 52px;
+}
+
+.routine {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 26px;
+  margin-top: 20px;
+}
+
+.routine li {
+  padding-top: 8px;
+  border-top: 1px solid rgba(14, 14, 12, 0.22);
+}
+
+.routine time {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.routine span {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.mini-now {
+  margin-top: 14px;
+}
+
+.mini-now li {
+  display: flex;
+  gap: 12px;
+  padding-block: 7px;
+  border-bottom: 1px solid rgba(14, 14, 12, 0.16);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.mini-now li:last-child {
+  border-bottom: 0;
+}
+
+.mini-now span {
+  flex: none;
+  width: 38px;
+  padding-top: 1px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--muted);
+}
+
+/* 游戏库 */
+.game-library {
+  margin-top: clamp(44px, 6vw, 68px);
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+
+.game-library-head,
+.photo-wall-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.game-library-head .mini-label,
+.photo-wall-head .mini-label {
+  color: var(--ink);
+}
+
+.game-library-head > span,
+.photo-wall-head > span {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--muted);
+}
+
+.game-library > ul {
+  margin-top: 14px;
+}
+
+.game-library li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 118px 92px;
+  gap: clamp(12px, 2vw, 24px);
+  align-items: center;
+  margin-inline: -14px;
+  padding: 15px 14px;
+  border-bottom: 1px solid rgba(14, 14, 12, 0.18);
+  transition: background 0.25s ease, border-radius 0.25s ease;
+}
+
+.game-library li:hover {
+  border-radius: 12px;
+  background: var(--acid);
+}
+
+.game-index {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--muted);
+}
+
+.game-main h3 {
+  font-size: clamp(1rem, 1.5vw, 1.22rem);
+  letter-spacing: -0.02em;
+}
+
+.game-main p {
+  margin-top: 3px;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.game-stat {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-align: right;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.game-rank {
+  justify-self: end;
+  padding: 4px 9px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  white-space: nowrap;
+}
+
+/* 照片墙 */
+.photo-wall {
+  margin-top: clamp(44px, 6vw, 68px);
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.photo-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  background: var(--paper);
+  cursor: zoom-in;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.55s var(--ease);
+}
+
+.photo-card > span {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.04em;
+}
+
+.photo-card:hover img {
+  transform: scale(1.04);
+}
+
+.photo-card:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+/* 大图 */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(14, 14, 12, 0.93);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-figure {
+  width: min(900px, 92vw);
+  max-height: 88vh;
+  margin: 0;
+  text-align: center;
+}
+
+.lightbox-figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 72vh;
+  margin-inline: auto;
+  border: 2px solid var(--paper);
+}
+
+.lightbox-figure figcaption {
+  margin-top: 12px;
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  color: var(--paper);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
 /* ---------- 12. 联系 ---------- */
 .contact {
   background: var(--acid);
@@ -1641,8 +2007,8 @@ body.nav-open .nav-toggle-icon i:last-child {
 .contact-title {
   margin-block: 22px 44px;
   font-size: clamp(2.9rem, 8.2vw, 7.8rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 
 .contact-title .outline {
@@ -1898,6 +2264,15 @@ body.nav-open .nav-toggle-icon i:last-child {
   .life-card--reading { grid-column: span 3; }
   .life-card--cooking { grid-column: span 3; }
   .life-card--travel { grid-column: span 6; }
+
+  .life-card--apex { grid-column: span 12; grid-row: auto; min-height: 360px; }
+  .life-card--camera { grid-column: span 6; }
+  .life-card--qingdao { grid-column: span 6; grid-row: auto; }
+  .life-card--shelf { grid-column: span 12; }
+  .life-card--routine { grid-column: span 6; }
+  .life-card--now { grid-column: span 6; }
+
+  .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 880px) {
@@ -2008,6 +2383,22 @@ body.nav-open .nav-toggle-icon i:last-child {
     justify-self: start;
   }
 
+  .game-library li {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 8px 14px;
+    padding-block: 14px;
+  }
+
+  .game-stat,
+  .game-rank {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .game-stat { text-align: left; }
+
+  .game-rank { margin-top: 2px; }
+
   .footer-bottom { justify-content: flex-start; }
 }
 
@@ -2064,13 +2455,23 @@ body.nav-open .nav-toggle-icon i:last-child {
   .life-card--photo,
   .life-card--reading,
   .life-card--cooking,
-  .life-card--travel {
+  .life-card--travel,
+  .life-card--apex,
+  .life-card--camera,
+  .life-card--qingdao,
+  .life-card--shelf,
+  .life-card--routine,
+  .life-card--now {
     grid-column: span 1;
     grid-row: auto;
     min-height: 210px;
   }
 
+  .life-card--apex { min-height: 340px; }
+
   .life-card--coffee .life-icon svg { width: 56px; height: 56px; }
+
+  .photo-grid { gap: 10px; }
 
   .toolbox { flex-direction: column; gap: 14px; }
 

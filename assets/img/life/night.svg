@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="nightTitle">
+  <title id="nightTitle">青岛夜晚散步的插画</title>
+  <rect width="800" height="1000" fill="#0E0E0C"/>
+  <circle cx="600" cy="230" r="120" fill="#2F4BFF"/>
+  <circle cx="560" cy="205" r="120" fill="#0E0E0C"/>
+  <g fill="#D8FF3E">
+    <circle cx="140" cy="150" r="4"/><circle cx="250" cy="90" r="3"/><circle cx="330" cy="210" r="4"/>
+    <circle cx="450" cy="120" r="3"/><circle cx="700" cy="90" r="4"/><circle cx="730" cy="330" r="3"/>
+  </g>
+  <path d="M0 760 H800 V1000 H0 Z" fill="#191916"/>
+  <path d="M0 760 L120 700 L220 760 L340 680 L470 760 L600 710 L800 760" fill="none" stroke="#F4F0E6" stroke-width="2" opacity=".3"/>
+  <g stroke="#F4F0E6" stroke-width="4" opacity=".55">
+    <path d="M110 760V560M690 760V540"/>
+  </g>
+  <g fill="#D8FF3E">
+    <circle cx="110" cy="548" r="22"/>
+    <circle cx="690" cy="528" r="22"/>
+  </g>
+  <path d="M180 760 L180 640 L260 640 L260 760" fill="none" stroke="#FF4B2B" stroke-width="5"/>
+  <g fill="#F4F0E6" font-family="Consolas, 'Courier New', monospace">
+    <text x="46" y="78" font-size="20" letter-spacing="7">NIGHT / 06</text>
+    <text x="46" y="118" font-size="13" letter-spacing="4" opacity=".6">WALK / QINGDAO</text>
+    <text x="46" y="930" font-size="16" letter-spacing="8" opacity=".8">AFTER HOURS</text>
+  </g>
+</svg>
