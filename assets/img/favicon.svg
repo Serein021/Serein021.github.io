@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="王鹏飞个人网站图标">
+  <rect width="64" height="64" rx="13" fill="#D8FF3E"/>
+  <path d="M13 19 L22 46 L32 27 L42 46 L51 19" fill="none" stroke="#0E0E0C" stroke-width="7" stroke-linejoin="miter" stroke-linecap="square"/>
+  <circle cx="52" cy="12" r="5" fill="#2F4BFF"/>
+</svg>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>王鹏飞 — 嵌入式软件工程师</title>
+  <meta name="description" content="王鹏飞的个人网站：嵌入式软件工程师，写固件、调时序、和示波器较劲，也认真生活。">
+  <meta name="author" content="王鹏飞">
+  <meta name="theme-color" content="#F4F0E6">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="王鹏飞 — 嵌入式软件工程师">
+  <meta property="og:description" content="写固件、调时序，也认真生活。">
+  <!-- 有了正式域名后，取消注释并替换成你的地址 -->
+  <!-- <link rel="canonical" href="https://yourname.github.io/"> -->
+  <!-- <meta property="og:url" content="https://yourname.github.io/"> -->
+  <!-- <meta property="og:image" content="https://yourname.github.io/assets/img/og-cover.png"> -->
+
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "王鹏飞",
+    "jobTitle": "嵌入式软件工程师",
+    "description": "嵌入式软件工程师，关注固件开发、实时系统与边缘计算。",
+    "url": "https://yourname.github.io/",
+    "sameAs": ["https://github.com/yourname"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "杭州",
+      "addressCountry": "CN"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="王鹏飞，回到页面顶部">
+        <span class="brand-dot" aria-hidden="true"></span>
+        王鹏飞<span class="brand-reg" aria-hidden="true">®</span>
+      </a>
+
+      <nav class="nav" id="siteNav" aria-label="主导航">
+        <a href="#about"><span class="nav-num">01</span>关于</a>
+        <a href="#skills"><span class="nav-num">02</span>能力</a>
+        <a href="#work"><span class="nav-num">03</span>项目</a>
+        <a href="#life"><span class="nav-num">04</span>生活</a>
+        <a href="#contact"><span class="nav-num">05</span>联系</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="#contact">聊一聊 <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+          <span class="nav-toggle-label">菜单</span>
+          <span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-deco" aria-hidden="true">
+        <span class="hero-ring"></span>
+        <span class="hero-plus hero-plus--1">+</span>
+        <span class="hero-plus hero-plus--2">+</span>
+        <span class="hero-bars"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>HELLO, WORLD — 你好，我是</p>
+          <h1 class="hero-name reveal" id="heroTitle" style="--delay:.06s">王鹏飞</h1>
+          <p class="hero-en reveal" style="--delay:.1s">WANG PENGFEI <span aria-hidden="true">/</span> EMBEDDED SOFTWARE ENGINEER</p>
+          <p class="hero-role reveal" style="--delay:.16s"><span>嵌入式软件工程师</span></p>
+          <p class="hero-intro reveal" style="--delay:.22s">
+            我在代码和电路之间工作：写固件、调时序，让设备在有限的资源里稳定地跑很多年。
+            偶尔也写点东西，记录技术之外的生活。
+          </p>
+
+          <div class="hero-actions reveal" style="--delay:.28s">
+            <a class="btn" href="#work">
+              看看我做的事
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="link-arrow" href="#about">关于我 <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <ul class="hero-social reveal" style="--delay:.34s">
+            <li><a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="mailto:wangpengfei@example.com">Email <span aria-hidden="true">↗</span></a></li>
+            <li class="hero-location"><span class="status-dot" aria-hidden="true"></span>现居杭州 · 开放合作</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" style="--delay:.2s">
+          <div class="tilt-wrap" data-tilt-wrap>
+            <div class="scope" data-tilt>
+              <div class="scope-head">
+                <span>PENGFEI.OS</span>
+                <span class="scope-live"><i aria-hidden="true"></i>LIVE</span>
+              </div>
+
+              <div class="scope-screen">
+                <svg viewBox="0 0 400 240" role="img" aria-labelledby="scopeTitle scopeDesc">
+                  <title id="scopeTitle">示波器波形示意图</title>
+                  <desc id="scopeDesc">一条在网格上跳动的信号波形，代表嵌入式系统的实时节拍。</desc>
+                  <defs>
+                    <pattern id="scopeGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+                      <path d="M25 0H0V25" fill="none" stroke="#D8FF3E" stroke-opacity=".13" stroke-width="1"/>
+                    </pattern>
+                    <filter id="scopeGlow" x="-30%" y="-30%" width="160%" height="160%">
+                      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+                      <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <rect width="400" height="240" fill="#081005"/>
+                  <rect width="400" height="240" fill="url(#scopeGrid)"/>
+                  <line x1="0" y1="120" x2="400" y2="120" stroke="#D8FF3E" stroke-opacity=".22" stroke-dasharray="2 6"/>
+                  <line x1="200" y1="0" x2="200" y2="240" stroke="#D8FF3E" stroke-opacity=".22" stroke-dasharray="2 6"/>
+
+                  <path id="wavePath" d="M0 150 L34 150 L48 150 L62 92 L76 208 L90 150 L142 150 L156 118 L170 182 L184 150 L244 150 L258 74 L272 218 L286 150 L338 150 L352 138 L366 162 L400 150"
+                        fill="none" stroke="#D8FF3E" stroke-width="2.4" stroke-linejoin="round" filter="url(#scopeGlow)"/>
+                  <circle class="scope-dot" r="4.5" fill="#F4F0E6">
+                    <animateMotion dur="5.5s" repeatCount="indefinite">
+                      <mpath href="#wavePath"/>
+                    </animateMotion>
+                  </circle>
+
+                  <text x="14" y="24" fill="#D8FF3E" fill-opacity=".7" font-family="Consolas, monospace" font-size="9" letter-spacing="1">CH1 2.00V</text>
+                  <text x="304" y="24" fill="#D8FF3E" fill-opacity=".7" font-family="Consolas, monospace" font-size="9" letter-spacing="1">1ms / DIV</text>
+                  <text x="14" y="228" fill="#D8FF3E" fill-opacity=".45" font-family="Consolas, monospace" font-size="9" letter-spacing="1">TRIG'D</text>
+                  <text x="304" y="228" fill="#D8FF3E" fill-opacity=".45" font-family="Consolas, monospace" font-size="9" letter-spacing="1">RUN</text>
+                </svg>
+              </div>
+
+              <div class="scope-pins" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+
+              <div class="scope-foot">
+                <span>FW v1.0</span>
+                <span>HANGZHOU</span>
+                <span>2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sticker" aria-hidden="true">POWER<br>ON</div>
+          <div class="badge-spin" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs>
+                <path id="badgeCircle" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+              </defs>
+              <text font-size="8.4" letter-spacing="2.6" fill="#0E0E0C" font-family="Consolas, monospace">
+                <textPath href="#badgeCircle">KEEP BUILDING · 保持好奇 · 认真生活 · </textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="float-tag float-tag--1" aria-hidden="true">C / C++</div>
+          <div class="float-tag float-tag--2" aria-hidden="true">RTOS</div>
+        </div>
+      </div>
+
+      <div class="container hero-stats reveal">
+        <div><strong>6<sup>+</sup></strong><span>年固件开发</span></div>
+        <div><strong>20<sup>+</sup></strong><span>个落地项目</span></div>
+        <div><strong>∞</strong><span>杯手冲咖啡</span></div>
+        <a class="scroll-hint" href="#about" aria-label="向下滚动到关于我">
+          <span>SCROLL</span>
+          <span class="scroll-hint-line" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span>固件开发</span><span class="sep">✳</span>
+            <span>实时系统</span><span class="sep">✳</span>
+            <span>通信协议</span><span class="sep">✳</span>
+            <span>硬件联调</span><span class="sep">✳</span>
+            <span>边缘计算</span><span class="sep">✳</span>
+            <span>认真生活</span><span class="sep">✳</span>
+          </div>
+          <div class="ticker-group">
+            <span>固件开发</span><span class="sep">✳</span>
+            <span>实时系统</span><span class="sep">✳</span>
+            <span>通信协议</span><span class="sep">✳</span>
+            <span>硬件联调</span><span class="sep">✳</span>
+            <span>边缘计算</span><span class="sep">✳</span>
+            <span>认真生活</span><span class="sep">✳</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--dark about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-num">01</span>ABOUT ME</p>
+            <h2 class="section-title reveal" id="aboutTitle">关于<span class="outline">我</span></h2>
+          </div>
+          <p class="section-note reveal">一个和硬件打交道的人，<br>也努力把生活过得具体。</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <div class="portrait-frame tilt-wrap" data-tilt-wrap>
+              <img src="assets/img/portrait.svg" alt="王鹏飞的头像插画，占位图，可替换为真人照片" width="600" height="720" data-tilt>
+              <span class="portrait-tag">杭州 / HANGZHOU</span>
+            </div>
+            <p class="media-caption">FIG. 01 — 一个普通工作日的下午</p>
+          </div>
+
+          <div class="about-copy">
+            <p class="about-lead reveal">
+              比起「写代码的」，<br>
+              我更愿意说自己是个<br>
+              <mark>「让东西跑起来的人」</mark>。
+            </p>
+
+            <div class="about-text reveal">
+              <p>
+                我是一名嵌入式软件工程师，日常和 MCU、RTOS、传感器、通信协议打交道。
+                从裸机寄存器到 Linux 应用层，从一块空板子到量产固件，这些路我都走过。
+              </p>
+              <p>
+                我享受那种把不确定性一点点收敛的过程：示波器上的波形终于干净，
+                几个月的偶发死机被定位到一行越界写，设备在零下二十度仍然准时醒来。
+                这些瞬间很安静，但足够让人上瘾。
+              </p>
+              <p>
+                工作之外，我用咖啡、骑行、相机和厨房把自己从屏幕前拽回来。
+                这个网站是我的两张底片：一张关于专业，一张关于生活。
+              </p>
+            </div>
+
+            <div class="now reveal">
+              <p class="mini-label">现在 / NOW</p>
+              <ul>
+                <li><span>在写</span>一个基于 Rust 的 Bootloader 实验</li>
+                <li><span>在读</span>《Making Embedded Systems》</li>
+                <li><span>在听</span>播客《内核恐慌》</li>
+                <li><span>在练</span>周末 40 公里骑行</li>
+              </ul>
+            </div>
+
+            <dl class="facts reveal">
+              <div><dt>坐标</dt><dd>杭州 · 中国</dd></div>
+              <div><dt>身份</dt><dd>嵌入式软件工程师</dd></div>
+              <div><dt>状态</dt><dd>开放交流与合作</dd></div>
+              <div><dt>邮箱</dt><dd>wangpengfei@example.com</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-num">02</span>EXPERTISE</p>
+            <h2 class="section-title reveal" id="skillsTitle">专业<span class="outline">能力</span></h2>
+          </div>
+          <p class="section-note reveal">不追求「什么都会」，<br>但求每一层都说得清。</p>
+        </div>
+
+        <div class="bento">
+          <article class="skill-card skill-card--acid skill-card--wide reveal">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>
+              </span>
+              <span class="skill-index">/ 01</span>
+            </div>
+            <div class="skill-body">
+              <h3>固件开发</h3>
+              <p>从寄存器到应用层，写可维护、可测试、能过冬的代码。既在乎每一个字节，也在乎三年后还有人敢改。</p>
+            </div>
+            <ul class="tags"><li>C</li><li>C++</li><li>Rust</li><li>裸机</li><li>低功耗</li></ul>
+            <span class="skill-ghost" aria-hidden="true">01</span>
+          </article>
+
+          <article class="skill-card skill-card--blue reveal" style="--delay:.05s">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.2 2"/><path d="M12 1.8v2.4M12 19.8v2.4M1.8 12h2.4M19.8 12h2.4"/></svg>
+              </span>
+              <span class="skill-index">/ 02</span>
+            </div>
+            <div class="skill-body">
+              <h3>实时系统</h3>
+              <p>对时间有洁癖：中断、调度、优先级反转，都要说得清。</p>
+            </div>
+            <ul class="tags"><li>FreeRTOS</li><li>Zephyr</li><li>时序</li></ul>
+            <span class="skill-ghost" aria-hidden="true">02</span>
+          </article>
+
+          <article class="skill-card skill-card--lilac reveal" style="--delay:.1s">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 14.5h4l2-8 3.5 15 3-12 2 5h4.5"/></svg>
+              </span>
+              <span class="skill-index">/ 03</span>
+            </div>
+            <div class="skill-body">
+              <h3>通信协议</h3>
+              <p>让设备彼此听懂，也让协议栈在异常时体面地退场。</p>
+            </div>
+            <ul class="tags"><li>CAN</li><li>UART</li><li>SPI</li><li>I2C</li><li>BLE</li></ul>
+            <span class="skill-ghost" aria-hidden="true">03</span>
+          </article>
+
+          <article class="skill-card skill-card--ink reveal">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M6 12l3-4 3 6 3-4 3 2"/><path d="M9 21h6M12 17v4"/></svg>
+              </span>
+              <span class="skill-index">/ 04</span>
+            </div>
+            <div class="skill-body">
+              <h3>硬件联调</h3>
+              <p>看得懂原理图，也愿意在实验室里蹲一整天，直到波形干净。</p>
+            </div>
+            <ul class="tags"><li>示波器</li><li>逻辑分析仪</li><li>JTAG</li><li>功耗分析</li></ul>
+            <span class="skill-ghost" aria-hidden="true">04</span>
+          </article>
+
+          <article class="skill-card skill-card--verm reveal" style="--delay:.05s">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+              </span>
+              <span class="skill-index">/ 05</span>
+            </div>
+            <div class="skill-body">
+              <h3>边缘智能</h3>
+              <p>在 64KB RAM 里塞进一点点聪明，让判断发生在离传感器最近的地方。</p>
+            </div>
+            <ul class="tags"><li>Embedded Linux</li><li>TinyML</li><li>传感器融合</li></ul>
+            <span class="skill-ghost" aria-hidden="true">05</span>
+          </article>
+
+          <article class="skill-card skill-card--paper reveal" style="--delay:.1s">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8.5v7"/><path d="M18 11.5c0 3.2-3 4.5-6 4.5H8.5"/></svg>
+              </span>
+              <span class="skill-index">/ 06</span>
+            </div>
+            <div class="skill-body">
+              <h3>工程化</h3>
+              <p>让固件像软件一样被管理：版本、测试、CI、文档，一个都不能少。</p>
+            </div>
+            <ul class="tags"><li>Git</li><li>CMake</li><li>CI</li><li>单元测试</li></ul>
+            <span class="skill-ghost" aria-hidden="true">06</span>
+          </article>
+        </div>
+
+        <div class="toolbox reveal">
+          <p class="mini-label">TOOLBOX</p>
+          <ul>
+            <li>C / C++</li><li>Rust</li><li>Python</li><li>FreeRTOS</li><li>Zephyr</li>
+            <li>STM32</li><li>ESP32</li><li>nRF52</li><li>CAN</li><li>BLE</li>
+            <li>Embedded Linux</li><li>Git</li><li>CMake</li><li>JTAG</li><li>示波器</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section section--dark work" id="work" aria-labelledby="workTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-num">03</span>SELECTED WORK</p>
+            <h2 class="section-title reveal" id="workTitle">工作与<span class="outline">项目</span></h2>
+          </div>
+          <p class="section-note reveal">下面这些项目均已脱敏，<br>数字比形容词更诚实。</p>
+        </div>
+
+        <div class="work-grid">
+          <aside class="work-aside reveal">
+            <p class="work-statement">把复杂的东西<br>做得可靠、安静、<br>刚刚好。</p>
+            <div class="work-meta">
+              <p class="mini-label">目前接受</p>
+              <ul>
+                <li>固件开发 / 外包</li>
+                <li>技术咨询</li>
+                <li>远程合作</li>
+              </ul>
+            </div>
+            <p class="work-note">受保密协议限制，部分项目细节已做模糊处理。</p>
+          </aside>
+
+          <div class="projects">
+            <article class="project reveal">
+              <div class="project-index">01</div>
+              <div class="project-main">
+                <div class="project-head">
+                  <h3>多协议智能网关</h3>
+                  <span class="project-year">2024</span>
+                </div>
+                <p class="project-role">固件负责人</p>
+                <p class="project-desc">面向全屋智能的边缘网关：BLE、Wi-Fi 与有线总线三路并发，本地场景引擎，支持差分 OTA 与断网自治。</p>
+                <ul class="project-metrics">
+                  <li>待机功耗 ↓ 38%</li>
+                  <li>OTA 成功率 99.6%</li>
+                </ul>
+                <ul class="tags"><li>FreeRTOS</li><li>ESP32</li><li>BLE</li><li>OTA</li></ul>
+              </div>
+              <span class="project-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-index">02</div>
+              <div class="project-main">
+                <div class="project-head">
+                  <h3>工业振动监测节点</h3>
+                  <span class="project-year">2023</span>
+                </div>
+                <p class="project-role">嵌入式开发</p>
+                <p class="project-desc">电池供电的振动传感器：3.2kHz 采样、边缘特征提取、异常预警，目标是一次部署、连续运行两年。</p>
+                <ul class="project-metrics">
+                  <li>续航 24 个月</li>
+                  <li>采样 3.2kHz</li>
+                </ul>
+                <ul class="tags"><li>STM32L4</li><li>TinyML</li><li>LoRa</li><li>低功耗</li></ul>
+              </div>
+              <span class="project-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-index">03</div>
+              <div class="project-main">
+                <div class="project-head">
+                  <h3>车载诊断与刷写工具</h3>
+                  <span class="project-year">2022</span>
+                </div>
+                <p class="project-role">工具链开发</p>
+                <p class="project-desc">面向产线的 CAN / CAN-FD 诊断工具：协议解析、脚本化测试、批量刷写与完整追溯，替代原先的三套手工流程。</p>
+                <ul class="project-metrics">
+                  <li>产线节拍 ↓ 45%</li>
+                  <li>覆盖 12 款车型</li>
+                </ul>
+                <ul class="tags"><li>CAN</li><li>Python</li><li>Qt</li><li>CI</li></ul>
+              </div>
+              <span class="project-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-index">04</div>
+              <div class="project-main">
+                <div class="project-head">
+                  <h3>低功耗可穿戴手环</h3>
+                  <span class="project-year">2021</span>
+                </div>
+                <p class="project-role">固件开发</p>
+                <p class="project-desc">nRF52 平台手环固件：BLE 连接、传感器融合、消息提醒与睡眠监测，在 200mAh 电池上做到两周续航。</p>
+                <ul class="project-metrics">
+                  <li>续航 14 天</li>
+                  <li>BLE 重连 &lt; 1s</li>
+                </ul>
+                <ul class="tags"><li>nRF52</li><li>BLE</li><li>传感器</li><li>低功耗</li></ul>
+              </div>
+              <span class="project-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </article>
+          </div>
+        </div>
+
+        <div class="experience reveal">
+          <p class="mini-label">履历 / EXPERIENCE</p>
+          <div class="exp-grid">
+            <div class="exp-item">
+              <p class="exp-year">2024 — 至今</p>
+              <h3>高级嵌入式软件工程师</h3>
+              <p>某智能硬件公司</p>
+            </div>
+            <div class="exp-item">
+              <p class="exp-year">2022 — 2024</p>
+              <h3>嵌入式软件工程师</h3>
+              <p>某工业物联网公司</p>
+            </div>
+            <div class="exp-item">
+              <p class="exp-year">2020 — 2022</p>
+              <h3>固件开发工程师</h3>
+              <p>某消费电子公司</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIFE ============ -->
+    <section class="section life" id="life" aria-labelledby="lifeTitle">
+      <span class="life-blob" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-num">04</span>OFF THE CLOCK</p>
+            <h2 class="section-title reveal" id="lifeTitle">生活<span class="outline">切片</span></h2>
+          </div>
+          <p class="section-note reveal">这些不是副业，<br>是把我从屏幕前拽回来的东西。</p>
+        </div>
+
+        <p class="life-statement reveal">
+          工作之外，<br>
+          我也是个会为了<br>
+          一杯好咖啡<span class="scribble">绕路的人</span>。
+        </p>
+
+        <div class="life-grid">
+          <article class="life-card life-card--coffee reveal">
+            <div class="life-card-top">
+              <span class="life-index">01</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 3c0 1 1 1.2 1 2.4M12.5 3c0 1 1 1.2 1 2.4"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>手冲咖啡</h3>
+              <p>磨豆机比闹钟先响。最近在试埃塞的日晒，水温 92℃，一刀流。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">POUR OVER</span>
+          </article>
+
+          <article class="life-card life-card--cycling reveal" style="--delay:.05s">
+            <div class="life-card-top">
+              <span class="life-index">02</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-7h5l3 7"/><path d="M10 10L8 7h4"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>骑行</h3>
+              <p>周末 40 公里，和风较劲，也和自己较劲。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">CYCLING</span>
+          </article>
+
+          <article class="life-card life-card--photo reveal" style="--delay:.1s">
+            <div class="life-card-top">
+              <span class="life-index">03</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="4"/><path d="M8 7l2-3h4l2 3"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>摄影</h3>
+              <p>一台老富士，记录光，也记录人。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">PHOTOGRAPHY</span>
+          </article>
+
+          <article class="life-card life-card--reading reveal" style="--delay:.05s">
+            <div class="life-card-top">
+              <span class="life-index">04</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-2-5-2-8-1v14c3-1 6-1 8 1 2-2 5-2 8-1V5c-3-1-6-1-8 1Z"/><path d="M12 6v14"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>阅读</h3>
+              <p>技术书和小说各一半，最近在重读《百年孤独》。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">READING</span>
+          </article>
+
+          <article class="life-card life-card--cooking reveal" style="--delay:.1s">
+            <div class="life-card-top">
+              <span class="life-index">05</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c0-2 2-2 2-4M14 8c0-2 2-2 2-4"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>做饭</h3>
+              <p>照着菜谱失败，凭感觉成功。拿手菜是番茄牛腩。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">COOKING</span>
+          </article>
+
+          <article class="life-card life-card--travel reveal" style="--delay:.15s">
+            <div class="life-card-top">
+              <span class="life-index">06</span>
+              <span class="life-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-4-8-7-3Z"/><path d="M21 4L10 14"/></svg>
+              </span>
+            </div>
+            <div class="life-card-body">
+              <h3>旅行</h3>
+              <p>去陌生的地方，把好奇心捡回来。下一站想去西北。</p>
+            </div>
+            <span class="life-en" aria-hidden="true">TRAVEL</span>
+          </article>
+        </div>
+
+        <div class="life-log reveal">
+          <div class="life-log-head">
+            <p class="mini-label">生活日志 / LIFE LOG</p>
+            <span>2026</span>
+          </div>
+          <ul>
+            <li>
+              <time datetime="2026-09-14">09.14</time>
+              <p>给阳台添了一张折叠桌，现在那里是第二张工作台，光照很好。</p>
+              <span class="life-log-tag">日常</span>
+            </li>
+            <li>
+              <time datetime="2026-08-02">08.02</time>
+              <p>环湖 62 公里，爆胎一次，补胎技术退步了，但日落满分。</p>
+              <span class="life-log-tag">骑行</span>
+            </li>
+            <li>
+              <time datetime="2026-07-19">07.19</time>
+              <p>第一次参加手冲分享会，名次垫底，但喝到了今年最好的一支豆子。</p>
+              <span class="life-log-tag">咖啡</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow-num">05</span>GET IN TOUCH</p>
+        <h2 class="contact-title reveal" id="contactTitle">
+          一起做点<br>
+          <span class="outline">有意思</span>的东西？
+        </h2>
+
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p>
+              无论是固件外包、技术咨询，还是单纯想聊聊嵌入式，
+              都欢迎给我写信。我通常会在 24 小时内回复。
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn--dark" href="mailto:wangpengfei@example.com">
+                写封邮件给我
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <button class="btn btn--ghost" type="button" data-copy-email>复制邮箱</button>
+            </div>
+            <p class="contact-note">wangpengfei@example.com · 杭州时间 <span id="contactTime">--:--</span></p>
+          </div>
+
+          <ul class="contact-links reveal">
+            <li><span>GitHub</span><a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/yourname <span aria-hidden="true">↗</span></a></li>
+            <li><span>Email</span><a href="mailto:wangpengfei@example.com">wangpengfei@example.com <span aria-hidden="true">↗</span></a></li>
+            <li><span>城市</span><p>杭州 · 中国</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <p class="footer-cta">保持好奇，保持输出。</p>
+      <a class="back-top" href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+    </div>
+
+    <div class="footer-name" aria-hidden="true">王鹏飞</div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> 王鹏飞</p>
+      <p>手写 HTML / CSS / JS · 托管于 GitHub Pages</p>
+      <p class="footer-time">杭州时间 <span id="localTime">--:--:--</span></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

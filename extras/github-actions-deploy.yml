@@ -1,0 +1,47 @@
+# 可选：GitHub Actions 自动部署
+#
+# 默认的「从分支部署」已经够用，不需要这个文件。
+# 如果你想改成 Actions 部署：
+#   1. 把本文件复制到 .github/workflows/deploy.yml
+#   2. 在仓库 Settings → Pages → Source 选择 "GitHub Actions"
+#   3. 推送到 main 分支即可自动发布
+#
+# 注意：启用 Actions 后，请不要再把 Pages Source 设为分支，否则部署会冲突。
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
